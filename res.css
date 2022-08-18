@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    max-width: 992px;
+    min-width: 320px;
+}
+.subtitle {
+    display: flex;
+    align-items: flex-start;
+    width: 600px;
+}
+.subtitle img {
+    margin-right: 10px;
+}
+header {
+    margin-bottom: 30px;
+}
+header .container h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+}
+header .container .subtitle p {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin:0;
+}
+.banner .container img {
+    width: 969px;
+    height: 370px;
+    border-radius: 12px;
+}
+main .container .main-division {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 970px;
+}
+main .container .main-division .cooking-time {
+    width: 216px;
+    height: 367px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+    border-radius: 12px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+main .container .main-division .cooking-time .items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 126px;
+}
+
+main .container .main-division .cooking-time .items img {
+    width: 32px;
+    height: 32px;
+}
+main .container .main-division .cooking-time .items .items-desc span {
+    text-transform: uppercase;
+    color: #bdbdbd;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 5px 5px;
+}
+main .container .main-division .cooking-time .items .items-desc h6 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2994A;
+    margin: 5px 5px;
+}
+main .container .main-division .cooking-time .items .items-desc p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 5px 5px;
+}
+
+
+main .container .main-division .recipe {
+    flex: 1;
+}
+main .container .main-division .recipe h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+main .container .main-division .recipe h4 {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+main .container .main-division .recipe label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+main .container .main-division .recipe .list .list-items {
+    display: flex;
+}
+main .container .main-division .recipe .list .list-number {
+    width: 36px;
+    height: 36px;
+    background-color: #F2994A;
+    border-radius: 6px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    padding: 14px;
+
+}
+main .container .main-division .recipe .list .list-desc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 35px;
+}
+
+    
+
+main .container .main-division .recipe .source {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 60px;
+    color: #bdbdbd;
+}
+.footer-body p {
+    text-align: center;
+    color: #bdbdbd;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 17px;
+    padding-bottom: 20px;
+}
+  
+  .footer-body a {
+    color: #bdbdbd;
+    font-weight: bold;
+}
+  
+  footer {
+    margin-top: 100px;
+}
+
+@media (max-width:769px) {
+    .container {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        max-width: 699px;
+        min-width: 320px;
+    }
+    header .container h1 {
+        font-size: 24px;
+        line-height: 32px;
+
+    }
+    header .container .subtitle {
+        width: auto;
+    }
+    header .container .subtitle p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .banner .container img {
+        width: 100%;
+        height: 213px;
+    }
+    main .container .main-division {
+        display: flex;
+        flex-direction: column;
+
+}
+    main .container .main-division .cooking-time {
+        display: grid;
+        grid-template-areas: 
+        "yield yield yield"
+        "prep cook total"
+        ;
+        border-style: none;
+        width: auto;
+        height: auto;
+        box-shadow: 0px 0px 0px rgb(0 0 0 / 10%);
+    }
+    main .container .main-division .cooking-time .items {
+        width: auto;
+        margin: 10px 1px;
+    }
+    .item1 {
+        grid-area: yield;
+    }
+    .item2 {
+        grid-area: prep;
+    }
+    .item3 {
+        grid-area: cook;
+    }
+    .item4 {
+        grid-area: total;
+    }
+    main .container .main-division .recipe {
+        flex: 0;
+    }
+    main .container .main-division .recipe h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    main .container .main-division .recipe h4 {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    main .container .main-division .recipe label {
+        font-size: 14px;
+    }
+    main .container .main-division .recipe .source {
+        font-size: 10px;
+    }
